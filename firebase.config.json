@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "prophetbettingtips",
+  "private_key_id": "734b68e4454e4a603e87043a9db5cb20bb3bf74c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCVnkpWX5FdJSz9\ntX0QAot3pLOlXpaD27FGPM+BOzZP32o84KTOPOvK3BG+Oo14bz17njL87G/XPWbK\nL33tmw6b77ckaqqYkdm/KrfpkqZCa/6rtqenc0PHdJUagILCkOuLoqUNaEu0sfp3\nfu6OM/R6vuRWc9d4vJSJPizYyMJ2TAjwuurt0TJD5bOCsfrLFJezzq3F/g7HwsfX\nxPQyLwar+BT41yhkEkMo2CWs2WKlOYP+0cpDELrMIAV0xCza5lJgS7CjKD9TVLt7\nnsPqr8aHHDCm/dwrvesgRo3n2GiaL7NI4IhYv20cfi0aBVcb/ykctfUFs/WpZEQ3\nxqsWAB9RAgMBAAECggEAD6m6tNscCn5t/NYclGn9HsErxgf7xYG2HRkYTLpIVR6Z\nmRZCuo0keXVbbX46Dt3FDSVtHLmbJb3O/niapslg7fsvluI3H3IZXmAYUR1MnCSB\nId8lIwG37+/+UgAacEhKmFt7tZvHB9DKserPCi0EjuW1XXA9d5gftqm/I9IJ5ZH8\nMnBq6yTQv0S05WvGRB93KAQpAlSdG3M8rNng+rDmxaBYVsmLnzoZLMJgs+r8EWt0\nfGpKoC4aE8QteI75pkWBHloiaCPc7Y7iTioEBlrZE9p1pZNgLdasMLVJqoAF1T8w\n+gnYYhSnxk5RLaX1DFBGLSlK/CPX/19o1dgCXjzRjwKBgQDFeCxoUuJV1489Ffo/\nQKsNMpbRVarR5eg4Lpj5ltvNUZ/lJ5wAC/9NhKaCk0s5PlXzm/4NRJzCMtvslKSA\nzLSqrfZucGFTUSwXB4J6ynOifDBRvE1knWH/IJfYBV0Cv0MA3RbT9Teu2XigaIl2\nMiQtCzNWlPUzIONlizdiV0l8rwKBgQDB9zZU8z0S3C+Z1h8LxjK3qrrV++JyypHj\nkZ5v/ENeBkrBW+Kd27HOQzb8nAhjVZS36W42rgQL7o+RGjdbtfeeT7xbnflistgR\nzFm+90tquAjptIc+uepW2YY2Lom9FV/5YEVesgkwMwLIY7r/wVcAd7GXQP8uq9+k\n2QSdLo8j/wKBgC3z6EmiuB8H2cJ6YdDkaKnakvRF/kl4OhEQ7vJuI9pk21PFYu0z\n3YaZjvIl+sRoeDIHpBhMVjpvAXTNpnZ+rLBnaUiMCGoOIrd9POT8ReqTAd+TdWMr\nqMlpOUzA+sMP5TTHPm+2ye17mDGkAhEqW/bLe3fzlBgA2EoiGpJdA7HrAoGATOHp\nZki3x5cBQy/tRGR+S/Dfd9wMiUWkCBj7PRY3ubgyv2vlan7ffouD6yMJ7B3LAg8D\nwaa+MeCQhYpnsPFywgyG86WtaSLMpFlkpV4uRZHG7qPBC+rzaRN1sFpH/GvRi+5N\n8NgO7kz56GYnhCKlkqje+r4np982mYfv3UHMOQ8CgYBpcaKrk56QNs0BAU8KhxzM\nbbn9qnCZEWz1gsRuvJyNBNcOKhBp1Qguwojju/34BPB5szgIJ20Y7iUB5uJMPfiL\nrsviWXtd7LLZ2MoHQMx69SCxZtpkfNQW5rrOYSjkWM7CJEN1a/VtN1mjm3lXmYDG\nCn2bdgSmKDnOpjyPiU5huw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-gzvp2@prophetbettingtips.iam.gserviceaccount.com",
+  "client_id": "118391671351858307893",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-gzvp2%40prophetbettingtips.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

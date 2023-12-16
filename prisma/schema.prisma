@@ -1,0 +1,103 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+enum Providers {
+  LOCAL
+  GOOGLE
+  PHONE
+}
+
+enum PackageDurations {
+  ONE_WEEK
+  TWO_WEEK
+  ONE_MONTH
+  TWO_MONTH
+  THREE_MONTH
+  SIX_MONTH
+  YEARLY
+}
+
+model User {
+  id String @id @default(uuid())
+
+  first_name                String?
+  last_name                 String?
+  email                     String             @unique
+  hash                      String?
+  refreshToken              String?
+  verificationHash          String?
+  isVerified                Boolean            @default(false)
+  isActive                  Boolean            @default(true)
+  authProviders             Providers          @default(LOCAL)
+  providerId                String?
+  verificationCodeExpiresAt DateTime?
+  isPassResetEnabled        Boolean            @default(false)
+  subscription              Subscription?
+  purchaseReference         PurchaseReference?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("users")
+}
+
+model Package {
+  id String @id @default(uuid())
+
+  packageName       String
+  priceIn_usd       Float
+  priceIn_etb       Float
+  packageDes        String
+  duration          PackageDurations
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+
+  @@map("packages")
+}
+
+model Subscription {
+  id        String   @id @default(uuid())
+  startDate DateTime
+  endDate   DateTime
+  isActive  Boolean  @default(true)
+  isRenewed Boolean  @default(false)
+
+  user   User   @relation(fields: [userId], references: [id])
+  userId String @unique
+
+  packageId String
+
+  purchaseReference   PurchaseReference @relation(fields: [purchaseReferenceId], references: [id])
+  purchaseReferenceId String            @unique
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("subscriptions")
+}
+
+model PurchaseReference {
+  id       String @id @default(uuid())
+  trx      String @unique
+  currency String
+  ammount  Float
+  user     User   @relation(fields: [userId], references: [id])
+  userId   String @unique
+
+  packageId String
+
+  subscription Subscription?
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+
+  @@map("purchaseReferences")
+}

@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE `packages` MODIFY `duration` ENUM('ONE_WEEK', 'TWO_WEEK', 'ONE_MONTH', 'TWO_MONTH', 'THREE_MONTH', 'SIX_MONTH', 'YEARLY') NOT NULL;
